@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,425 +11,492 @@
             box-sizing: border-box;
         }
 
-```
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-        line-height: 1.6;
-        color: #1a1a1a;
-        background: #fff;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fff;
+        }
 
-    nav {
-        background: #fff;
-        border-bottom: 1px solid #e5e5e5;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-        padding: 20px 0;
-    }
+        nav {
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 20px 0;
+        }
 
-    nav .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav .logo {
-        font-size: 16px;
-        font-weight: 600;
-        color: #1a1a1a;
-        letter-spacing: 1px;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 40px;
-        align-items: center;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: #666;
-        font-size: 14px;
-        transition: color 0.2s;
-    }
-
-    nav a:hover {
-        color: #1a1a1a;
-    }
-
-    .login-link {
-        color: #1a1a1a !important;
-        font-weight: 500;
-    }
-
-    section {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 100px 40px;
-    }
-
-    #hero {
-        padding-top: 180px;
-        padding-bottom: 120px;
-        text-align: center;
-    }
-
-    #hero h1 {
-        font-size: 48px;
-        font-weight: 600;
-        color: #1a1a1a;
-        margin-bottom: 24px;
-        letter-spacing: -1px;
-        line-height: 1.2;
-    }
-
-    #hero p {
-        font-size: 18px;
-        color: #666;
-        max-width: 800px;
-        margin: 0 auto;
-        line-height: 1.7;
-    }
-
-    h2 {
-        font-size: 14px;
-        font-weight: 600;
-        color: #999;
-        margin-bottom: 50px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 50px;
-        margin-top: 60px;
-    }
-
-    .service-card h3 {
-        font-size: 20px;
-        font-weight: 600;
-        color: #1a1a1a;
-        margin-bottom: 12px;
-    }
-
-    .service-card p {
-        font-size: 15px;
-        color: #666;
-        line-height: 1.7;
-    }
-
-    #about {
-        background: #fafafa;
-        max-width: 100%;
-        padding: 100px 40px;
-    }
-
-    #about .container {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-    #about p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.8;
-        max-width: 800px;
-    }
-
-    .stats {
-        display: flex;
-        gap: 80px;
-        margin-top: 60px;
-        flex-wrap: wrap;
-    }
-
-    .stat-item {
-        flex: 1;
-        min-width: 150px;
-    }
-
-    .stat-number {
-        font-size: 40px;
-        font-weight: 600;
-        color: #1a1a1a;
-        margin-bottom: 8px;
-    }
-
-    .stat-label {
-        font-size: 14px;
-        color: #999;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .capabilities-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 40px;
-        margin-top: 60px;
-    }
-
-    .capability-card h4 {
-        font-size: 16px;
-        font-weight: 600;
-        color: #1a1a1a;
-        margin-bottom: 8px;
-    }
-
-    .capability-card p {
-        font-size: 14px;
-        color: #999;
-    }
-
-    #clients {
-        background: #fafafa;
-        max-width: 100%;
-        padding: 100px 40px;
-    }
-
-    #clients .container {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-    .clients-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 50px;
-        margin-top: 60px;
-    }
-
-    .client-logo {
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.4;
-        transition: opacity 0.3s;
-    }
-
-    .client-logo:hover {
-        opacity: 0.7;
-    }
-
-    .client-logo img {
-        max-width: 120px;
-        max-height: 50px;
-        filter: grayscale(100%);
-    }
-
-    footer {
-        background: #1a1a1a;
-        color: #fff;
-        padding: 60px 40px 40px;
-    }
-
-    footer .container {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-    footer h3 {
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        letter-spacing: 1px;
-    }
-
-    footer a {
-        color: #999;
-        text-decoration: none;
-        font-size: 14px;
-        display: block;
-        margin-bottom: 10px;
-        transition: color 0.2s;
-    }
-
-    footer a:hover {
-        color: #fff;
-    }
-
-    footer .copyright {
-        margin-top: 60px;
-        padding-top: 30px;
-        border-top: 1px solid #333;
-        color: #666;
-        font-size: 13px;
-    }
-
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 2000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.7);
-    }
-
-    .modal-content {
-        background-color: #fff;
-        margin: 80px auto;
-        padding: 60px;
-        width: 90%;
-        max-width: 480px;
-        border-radius: 0;
-    }
-
-    .close {
-        color: #999;
-        float: right;
-        font-size: 28px;
-        font-weight: 300;
-        line-height: 20px;
-        cursor: pointer;
-        transition: color 0.2s;
-    }
-
-    .close:hover {
-        color: #1a1a1a;
-    }
-
-    .modal h2 {
-        margin-bottom: 40px;
-        font-size: 28px;
-        font-weight: 600;
-        color: #1a1a1a;
-        letter-spacing: 0;
-        text-transform: none;
-    }
-
-    .modal h3 {
-        font-size: 12px;
-        font-weight: 600;
-        color: #999;
-        margin-bottom: 20px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-
-    .form-group {
-        margin-bottom: 25px;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 8px;
-        font-size: 13px;
-        color: #666;
-        font-weight: 500;
-    }
-
-    input[type="email"],
-    input[type="password"] {
-        width: 100%;
-        padding: 14px;
-        border: 1px solid #e5e5e5;
-        border-radius: 0;
-        font-size: 15px;
-        font-family: inherit;
-        background: #fafafa;
-    }
-
-    input[type="email"]:focus,
-    input[type="password"]:focus {
-        outline: none;
-        border-color: #1a1a1a;
-        background: #fff;
-    }
-
-    button[type="submit"] {
-        width: 100%;
-        padding: 16px;
-        background: #1a1a1a;
-        color: #fff;
-        border: none;
-        border-radius: 0;
-        font-size: 14px;
-        cursor: pointer;
-        font-weight: 600;
-        margin-top: 20px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        transition: background 0.2s;
-    }
-
-    button[type="submit"]:hover {
-        background: #2a2a2a;
-    }
-
-    .login-info {
-        margin-top: 30px;
-        padding-top: 30px;
-        border-top: 1px solid #e5e5e5;
-        font-size: 14px;
-        color: #999;
-        line-height: 1.6;
-    }
-
-    @media (max-width: 768px) {
         nav .container {
-            padding: 0 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            letter-spacing: 1px;
         }
 
         nav ul {
-            gap: 25px;
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            align-items: center;
         }
 
-        #hero h1 {
-            font-size: 36px;
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            transition: color 0.2s;
         }
 
-        #hero p {
-            font-size: 16px;
+        nav a:hover {
+            color: #1a1a1a;
+        }
+
+        .login-link {
+            color: #1a1a1a !important;
+            font-weight: 500;
         }
 
         section {
-            padding: 80px 20px;
-        }
-
-        .stats {
-            gap: 40px;
-        }
-
-        .modal-content {
-            padding: 40px 30px;
-            margin: 40px auto;
-        }
-    }
-
-    @media (max-width: 480px) {
-        nav .container {
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        nav ul {
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 100px 40px;
         }
 
         #hero {
-            padding-top: 140px;
+            padding-top: 180px;
+            padding-bottom: 120px;
+            text-align: center;
         }
 
         #hero h1 {
-            font-size: 28px;
+            font-size: 48px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+            line-height: 1.2;
         }
-    }
-</style>
-```
 
+        #hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #999;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 50px;
+            margin-top: 60px;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        #about {
+            background: #fafafa;
+            max-width: 100%;
+            padding: 100px 40px;
+        }
+
+        #about .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        #about p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        .stats {
+            display: flex;
+            gap: 80px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .capability-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .capability-card p {
+            font-size: 14px;
+            color: #999;
+        }
+
+        #clients {
+            background: #fafafa;
+            max-width: 100%;
+            padding: 100px 40px;
+        }
+
+        #clients .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        #client-showcase {
+            background: #fff;
+            max-width: 100%;
+            padding: 80px 0;
+            overflow: hidden;
+        }
+
+        #client-showcase .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .slideshow-wrapper {
+            overflow: hidden;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .slideshow-wrapper::before,
+        .slideshow-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .slideshow-wrapper::before {
+            left: 0;
+            background: linear-gradient(to right, #fff, transparent);
+        }
+
+        .slideshow-wrapper::after {
+            right: 0;
+            background: linear-gradient(to left, #fff, transparent);
+        }
+
+        .slideshow-track {
+            display: flex;
+            gap: 80px;
+            animation: scroll 40s linear infinite;
+        }
+
+        .slideshow-track:hover {
+            animation-play-state: paused;
+        }
+
+        .brand-logo {
+            min-width: 160px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+
+        .brand-logo:hover {
+            opacity: 0.9;
+        }
+
+        .brand-logo img {
+            max-width: 140px;
+            max-height: 60px;
+            filter: grayscale(100%);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 60px 40px 40px;
+        }
+
+        footer .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        footer h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        footer a {
+            color: #999;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        footer .copyright {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 80px auto;
+            padding: 60px;
+            width: 90%;
+            max-width: 480px;
+            border-radius: 0;
+        }
+
+        .close {
+            color: #999;
+            float: right;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 20px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close:hover {
+            color: #1a1a1a;
+        }
+
+        .modal h2 {
+            margin-bottom: 40px;
+            font-size: 28px;
+            font-weight: 600;
+            color: #1a1a1a;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        .modal h3 {
+            font-size: 12px;
+            font-weight: 600;
+            color: #999;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #e5e5e5;
+            border-radius: 0;
+            font-size: 15px;
+            font-family: inherit;
+            background: #fafafa;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #1a1a1a;
+            background: #fff;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 16px;
+            background: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 0;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            background: #2a2a2a;
+        }
+
+        .login-info {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e5e5;
+            font-size: 14px;
+            color: #999;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            nav .container {
+                padding: 0 20px;
+            }
+
+            nav ul {
+                gap: 25px;
+            }
+
+            #hero h1 {
+                font-size: 36px;
+            }
+
+            #hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 80px 20px;
+            }
+
+            .stats {
+                gap: 40px;
+            }
+
+            .modal-content {
+                padding: 40px 30px;
+                margin: 40px auto;
+            }
+
+            .slideshow-track {
+                gap: 50px;
+            }
+
+            .brand-logo {
+                min-width: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            #hero {
+                padding-top: 140px;
+            }
+
+            #hero h1 {
+                font-size: 28px;
+            }
+
+            .slideshow-track {
+                gap: 40px;
+            }
+
+            .brand-logo {
+                min-width: 100px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -443,175 +509,219 @@
         </div>
     </nav>
 
-```
-<section id="hero">
-    <h1>Industrial Electronics Brokerage</h1>
-    <p>Connecting PCB and electronic component capacity across China, Taiwan, and Vietnam with manufacturers in Bangladesh and South Asia</p>
-</section>
+    <section id="hero">
+        <h1>Industrial Electronics Brokerage</h1>
+        <p>Connecting PCB and electronic component capacity across China, Taiwan, and Vietnam with manufacturers in Bangladesh and South Asia</p>
+    </section>
 
-<section id="services">
-    <h2>What We Do</h2>
-    <div class="services-grid">
-        <div class="service-card">
-            <h3>Sourcing</h3>
-            <p>Strategic supplier identification and vetting across multiple markets, ensuring quality and reliability at scale</p>
-        </div>
-        <div class="service-card">
-            <h3>Quality Control</h3>
-            <p>Rigorous inspection protocols and compliance management to meet international standards</p>
-        </div>
-        <div class="service-card">
-            <h3>Logistics</h3>
-            <p>End-to-end supply chain coordination with optimized shipping and customs clearance</p>
-        </div>
-        <div class="service-card">
-            <h3>Partnership</h3>
-            <p>Long-term strategic relationships built on transparency, efficiency, and mutual growth</p>
-        </div>
-    </div>
-</section>
-
-<section id="about">
-    <div class="container">
-        <h2>About THM Technologies</h2>
-        <p>We operate at the intersection of Asia Pacific manufacturing and South Asian industrial demand. Our team facilitates seamless connections between component buyers and production capacity, handling complex sourcing operations with precision and discretion.</p>
-        
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">$20M+</div>
-                <div class="stat-label">Monthly Volume</div>
+    <section id="services">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Sourcing</h3>
+                <p>Strategic supplier identification and vetting across multiple markets, ensuring quality and reliability at scale</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">6</div>
-                <div class="stat-label">Team Members</div>
+            <div class="service-card">
+                <h3>Quality Control</h3>
+                <p>Rigorous inspection protocols and compliance management to meet international standards</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">Global</div>
-                <div class="stat-label">Network</div>
+            <div class="service-card">
+                <h3>Logistics</h3>
+                <p>End-to-end supply chain coordination with optimized shipping and customs clearance</p>
+            </div>
+            <div class="service-card">
+                <h3>Partnership</h3>
+                <p>Long-term strategic relationships built on transparency, efficiency, and mutual growth</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="capabilities">
-    <h2>Core Capabilities</h2>
-    <div class="capabilities-grid">
-        <div class="capability-card">
-            <h4>PCB & PCBA</h4>
-            <p>Multi-layer, rigid-flex, standard boards</p>
+    <section id="about">
+        <div class="container">
+            <h2>About THM Technologies</h2>
+            <p>We operate at the intersection of Asia Pacific manufacturing and South Asian industrial demand. Our team facilitates seamless connections between component buyers and production capacity, handling complex sourcing operations with precision and discretion.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">$20M+</div>
+                    <div class="stat-label">Monthly Volume</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Global</div>
+                    <div class="stat-label">Network</div>
+                </div>
+            </div>
         </div>
-        <div class="capability-card">
-            <h4>Component Sourcing</h4>
-            <p>Passives, semiconductors, connectors</p>
-        </div>
-        <div class="capability-card">
-            <h4>Factory Relations</h4>
-            <p>Capacity audits, compliance verification</p>
-        </div>
-        <div class="capability-card">
-            <h4>Order Execution</h4>
-            <p>Production monitoring, delivery coordination</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="clients">
-    <div class="container">
-        <h2>Client Sectors</h2>
+    <section id="capabilities">
+        <h2>Core Capabilities</h2>
         <div class="capabilities-grid">
             <div class="capability-card">
-                <h4>Industrial Manufacturers</h4>
-                <p>Heavy equipment, automation systems</p>
+                <h4>PCB & PCBA</h4>
+                <p>Multi-layer, rigid-flex, standard boards</p>
             </div>
             <div class="capability-card">
-                <h4>Automotive Electronics</h4>
-                <p>Control systems, sensors, assemblies</p>
+                <h4>Component Sourcing</h4>
+                <p>Passives, semiconductors, connectors</p>
             </div>
             <div class="capability-card">
-                <h4>Consumer Appliances</h4>
-                <p>White goods, consumer durables</p>
+                <h4>Factory Relations</h4>
+                <p>Capacity audits, compliance verification</p>
             </div>
             <div class="capability-card">
-                <h4>Medical Devices</h4>
-                <p>Diagnostic equipment, monitors</p>
+                <h4>Order Execution</h4>
+                <p>Production monitoring, delivery coordination</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <div class="container">
-        <h3>Connect</h3>
-        <a href="mailto:info@thmtech.com">info@thmtech.com</a>
-        <div class="copyright">© 2026 THM Technologies. All Rights Reserved.</div>
-    </div>
-</footer>
-
-<div id="loginModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Client Portal</h2>
-        <h3>Factory & Client Access</h3>
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+    <section id="clients">
+        <div class="container">
+            <h2>Client Sectors</h2>
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <h4>Industrial Manufacturers</h4>
+                    <p>Heavy equipment, automation systems</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Automotive Electronics</h4>
+                    <p>Control systems, sensors, assemblies</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Consumer Appliances</h4>
+                    <p>White goods, consumer durables</p>
+                </div>
+                <div class="capability-card">
+                    <h4>Medical Devices</h4>
+                    <p>Diagnostic equipment, monitors</p>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+        </div>
+    </section>
+
+    <section id="client-showcase">
+        <div class="container">
+            <h2>Trusted by Industry Leaders</h2>
+        </div>
+        <div class="slideshow-wrapper">
+            <div class="slideshow-track">
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/samsung-8.svg" alt="Samsung"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/lg-electronics.svg" alt="LG"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/sony-2.svg" alt="Sony"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/tesla-motors.svg" alt="Tesla"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/toyota-7.svg" alt="Toyota"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/honda-9.svg" alt="Honda"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/ford-motor-company.svg" alt="Ford"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/bmw-logo.svg" alt="BMW"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/mercedes-benz-1.svg" alt="Mercedes"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/bosch.svg" alt="Bosch"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/panasonic-1.svg" alt="Panasonic"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/philips.svg" alt="Philips"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/siemens.svg" alt="Siemens"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/general-electric.svg" alt="GE"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/hitachi-3.svg" alt="Hitachi"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/lenovo-2.svg" alt="Lenovo"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/dell.svg" alt="Dell"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/hp-2.svg" alt="HP"></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/samsung-8.svg" alt="Samsung"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/lg-electronics.svg" alt="LG"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/sony-2.svg" alt="Sony"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/tesla-motors.svg" alt="Tesla"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/toyota-7.svg" alt="Toyota"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/honda-9.svg" alt="Honda"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/ford-motor-company.svg" alt="Ford"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/bmw-logo.svg" alt="BMW"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/mercedes-benz-1.svg" alt="Mercedes"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/bosch.svg" alt="Bosch"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/panasonic-1.svg" alt="Panasonic"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/philips.svg" alt="Philips"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/siemens.svg" alt="Siemens"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/general-electric.svg" alt="GE"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/hitachi-3.svg" alt="Hitachi"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/lenovo-2.svg" alt="Lenovo"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/dell.svg" alt="Dell"></div>
+                <div class="brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/hp-2.svg" alt="HP"></div>
             </div>
-            <button type="submit">Access Portal</button>
-            <div class="login-info">
-                Access orders, documents, approvals, and production schedules
-            </div>
-        </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Connect</h3>
+            <a href="mailto:info@thmtech.com">info@thmtech.com</a>
+            <div class="copyright">© 2026 THM Technologies. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Client Portal</h2>
+            <h3>Factory & Client Access</h3>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Access Portal</button>
+                <div class="login-info">
+                    Access orders, documents, approvals, and production schedules
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<script>
-    const modal = document.getElementById('loginModal');
-    const btn = document.getElementById('loginBtn');
-    const span = document.getElementsByClassName('close')[0];
-    const form = document.getElementById('loginForm');
+    <script>
+        const modal = document.getElementById('loginModal');
+        const btn = document.getElementById('loginBtn');
+        const span = document.getElementsByClassName('close')[0];
+        const form = document.getElementById('loginForm');
 
-    btn.onclick = function(e) {
-        e.preventDefault();
-        modal.style.display = 'block';
-    }
+        btn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = 'block';
+        }
 
-    span.onclick = function() {
-        modal.style.display = 'none';
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
+        span.onclick = function() {
             modal.style.display = 'none';
         }
-    }
 
-    form.onsubmit = function(e) {
-        e.preventDefault();
-        alert('Login functionality would connect to authentication system');
-        modal.style.display = 'none';
-    }
-
-    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            if (this.getAttribute('href') !== '#') {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
             }
-        });
-    });
-</script>
-```
+        }
 
+        form.onsubmit = function(e) {
+            e.preventDefault();
+            alert('Login functionality would connect to authentication system');
+            modal.style.display = 'none';
+        }
+
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
